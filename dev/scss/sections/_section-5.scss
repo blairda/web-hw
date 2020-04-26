@@ -4,10 +4,9 @@
 
 #section-5{
 
-
     #section-5-container{
         display: grid;
-        grid-template-columns: 15px auto 15px;
+        grid-template-columns: 10px auto 10px;
         grid-template-areas: ". section-5 .";
 
 
@@ -15,10 +14,11 @@
             grid-area: section-5;
         }
 
-    }
-
-    img{
-        width: 100%
+        #section-5-content{
+            img{
+                width: 100%;
+            }
+        }
     }
 
 }
