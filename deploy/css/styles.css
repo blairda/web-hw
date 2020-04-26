@@ -396,7 +396,7 @@ footer {
 ============= */
 #section-4 {
   display: grid;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: "section-4"; }
   #section-4 ul {
     grid-area: section-4;
     display: grid;
