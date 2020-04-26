@@ -356,13 +356,19 @@ textarea {
 /* =============
     Section-2
 ============= */
-#section-2 img {
+#section-2 aside img {
   width: 100%; }
 
 /* =============
     Section-3
 ============= */
 #section-3 img {
+  width: 100%; }
+
+/* =============
+    Section-4
+============= */
+#section-4 img {
   width: 100%; }
 
 /* =============
