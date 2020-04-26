@@ -5,4 +5,7 @@ footer{
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". footer .";
+    #footer-content{
+        grid-area: footer;
+    }
 }
