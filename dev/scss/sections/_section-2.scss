@@ -3,24 +3,40 @@
 ============= */
 
 #section-2{
-
-
-    aside{
-        img{
-            width: 100%
+    #section-2-inner{
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "cookies cookie-text";
+        }
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+        
+        aside{
+            @include md{
+                grid-area: cookies;
+            }
+            img{
+                width: 100%
+            }
+        }
+    
+        #section-2-container{
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". section-2 .";
+            @include md{
+                grid-area: cookie-text;
+            }
+    
+            #section-2-content{
+                grid-area: section-2;
+            }
+    
         }
     }
 
-    #section-2-container{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-2 .";
-
-
-        #section-2-content{
-            grid-area: section-2;
-        }
-
-    }
+    
 
 }

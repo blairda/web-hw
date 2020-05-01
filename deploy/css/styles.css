@@ -368,14 +368,31 @@ footer {
 /* =============
     Section-2
 ============= */
-#section-2 aside img {
+@media (min-width: 768px) {
+  #section-2 #section-2-inner {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "cookies cookie-text"; } }
+
+@media (min-width: 992px) {
+  #section-2 #section-2-inner {
+    grid-template-columns: 50% auto; } }
+
+@media (min-width: 768px) {
+  #section-2 #section-2-inner aside {
+    grid-area: cookies; } }
+
+#section-2 #section-2-inner aside img {
   width: 100%; }
 
-#section-2 #section-2-container {
+#section-2 #section-2-inner #section-2-container {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-2 ."; }
-  #section-2 #section-2-container #section-2-content {
+  @media (min-width: 768px) {
+    #section-2 #section-2-inner #section-2-container {
+      grid-area: cookie-text; } }
+  #section-2 #section-2-inner #section-2-container #section-2-content {
     grid-area: section-2; }
 
 /* =============
@@ -385,6 +402,9 @@ footer {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-3 ."; }
+  @media (min-width: 768px) {
+    #section-3 #section-3-container {
+      grid-template-columns: auto 50% auto; } }
   #section-3 #section-3-container #section-3-content {
     grid-area: section-3; }
 
