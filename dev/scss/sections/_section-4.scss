@@ -6,7 +6,23 @@
     display: grid;
     grid-template-areas: "section-4";
 
+
     ul{
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+            "g1 g1"
+            "g2 g3";
+        }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+            "g1 g2"
+            "g1 g3";
+        }
+
         grid-area: section-4;
         display: grid;
         gap: 20px;
@@ -14,6 +30,28 @@
         li{
             img{
                 width: 100%;
+            }
+        }
+
+        #g1{
+            @include md{
+                grid-area: g1;
+            }
+
+            @include lg{
+                grid-area: g1;
+            }
+        }
+
+        #g2{
+            @include lg{
+                grid-area: g2;
+            }
+        }
+
+        #g3{
+            @include lg{
+                grid-area: g3;
             }
         }
     }
