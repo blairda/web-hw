@@ -7,4 +7,7 @@
         width: 100%;
     }
 
+    @include xl{
+        max-width: 1200px;
+    }
 }

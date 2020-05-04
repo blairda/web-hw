@@ -365,6 +365,10 @@ footer {
 #section-1 img {
   width: 100%; }
 
+@media (min-width: 1200px) {
+  #section-1 {
+    max-width: 1200px; } }
+
 /* =============
     Section-2
 ============= */
