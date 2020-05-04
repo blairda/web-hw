@@ -6,6 +6,11 @@
     display: grid;
     grid-template-areas: "section-4";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-4 .";
+    }
+
 
     ul{
 

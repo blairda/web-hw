@@ -417,6 +417,10 @@ footer {
 #section-4 {
   display: grid;
   grid-template-areas: "section-4"; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-4 ."; } }
   #section-4 ul {
     grid-area: section-4;
     display: grid;
@@ -446,31 +450,28 @@ footer {
 /* =============
     Section-5
 ============= */
+@media (min-width: 768px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    grid-template-areas: ". section-5 ."; } }
+
+@media (min-width: 1200px) {
+  #section-5 {
+    grid-template-columns: auto 1000px auto; } }
+
+@media (min-width: 768px) {
+  #section-5 #section-5-inner {
+    grid-area: section-5; } }
+
 @media (min-width: 992px) {
   #section-5 #section-5-inner {
     display: grid;
-    grid-template-columns: auto 60%;
-    grid-template-areas: "cookie-circle cookie-text-bottom"; } }
+    grid-template-columns: 40% auto; } }
 
-@media (min-width: 992px) {
-  #section-5 #section-5-inner aside {
-    grid-area: cookie-circle; } }
-
-#section-5 #section-5-inner aside img {
-  width: 100%; }
-
-#section-5 #section-5-container {
+#section-5 #section-5-inner #section-5-text {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-5 ."; }
-  @media (min-width: 768px) {
-    #section-5 #section-5-container {
-      grid-template-columns: auto 50% auto; } }
-  @media (min-width: 992px) {
-    #section-5 #section-5-container {
-      grid-area: cookie-circle; } }
-  #section-5 #section-5-container #section-5-content {
-    grid-area: section-5; }
-  @media (min-width: 992px) {
-    #section-5 #section-5-container #section-5-text {
-      grid-area: cookie-text-bottom; } }
+  grid-template-areas: ". section-5-text ."; }
+  #section-5 #section-5-inner #section-5-text #section-5-text-content {
+    grid-area: section-5-text; }

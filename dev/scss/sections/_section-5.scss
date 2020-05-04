@@ -1,54 +1,106 @@
 /* =============
     Section-5
 ============= */
+#section-5 {
 
-#section-5{
-    #section-5-inner{
-    @include lg{
+    @include md{
         display: grid;
-        grid-template-columns: auto 60%;
-        grid-template-areas: "cookie-circle cookie-text-bottom";
+        grid-template-columns: auto 80% auto;
+        grid-template-areas: ". section-5 .";
     }
 
-    aside{
-        @include lg{
-            grid-area: cookie-circle;
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
+    #section-5-inner {
+
+        @include md{
+            grid-area: section-5;
         }
-        img{
-            width: 100%;
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+
+        @include xl{
+            // border: 1px solid red;
+        }
+
+        aside {
+            // text-align: center;
+
+            img{
+                // width: 199px;
+            }
+        }
+
+        #section-5-text {
+
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". section-5-text .";
+
+            #section-5-text-content{
+                grid-area: section-5-text;
+            }
+
         }
     }
 }
-        
-
-    #section-5-container{
-        display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-5 .";
-
-        @include md{
-            grid-template-columns: auto 50% auto;
-            // grid-template-areas:
-            // ". aside ."
-            // "section-5-text section-5-text section-5-text";
-            // aside{
-            //     grid-area: aside;
-            // }
-        }
-
-        @include lg{
-            grid-area: cookie-circle;
-        }
 
 
-        #section-5-content{
-            grid-area: section-5;
-        }
-        #section-5-text{
-           @include lg{
-            grid-area: cookie-text-bottom; 
-            }
-        }
-        
-        }
-    }
+
+
+
+// #section-5{
+//     #section-5-inner{
+//     @include lg{
+//         display: grid;
+//         grid-template-columns: auto 60%;
+//         grid-template-areas: "cookie-circle cookie-text-bottom";
+//     }
+
+//     aside{
+//         @include lg{
+//             grid-area: cookie-circle;
+//         }
+//         img{
+//             width: 100%;
+//         }
+//     }
+// }
+
+
+//     #section-5-container{
+//         display: grid;
+//         grid-template-columns: 10px auto 10px;
+//         grid-template-areas: ". section-5 .";
+
+//         @include md{
+//             grid-template-columns: auto 50% auto;
+//             // grid-template-areas:
+//             // ". aside ."
+//             // "section-5-text section-5-text section-5-text";
+//             // aside{
+//             //     grid-area: aside;
+//             // }
+//         }
+
+//         @include lg{
+//             grid-area: cookie-circle;
+//         }
+
+
+//         #section-5-content{
+//             grid-area: section-5;
+//         }
+//         #section-5-text{
+//            @include lg{
+//             grid-area: cookie-text-bottom; 
+//             }
+//         }
+
+//         }
+//     }
