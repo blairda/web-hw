@@ -3,10 +3,11 @@
 ============= */
 
 #section-2{
-    // @include xl{
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-areas: ". section-2 .";
-    // }
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2 .";
+    }
 
     #section-2-inner{
         @include md{
@@ -18,9 +19,9 @@
             grid-template-columns: 50% auto;
         }
         
-        // @include xl{
-        //     grid-area: section-2;
-        // }
+        @include xl{
+            grid-area: section-2;
+        }
 
         aside{
             @include md{
