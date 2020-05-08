@@ -6,6 +6,7 @@
     background-position: center;
     background-size: cover;
     height: 50vh;
+    position: relative;
 
     @include md {
         height: 60vh;
@@ -18,4 +19,11 @@
     @include xl {
         height: 60vh;
     }
+
+    h1{
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+
 }

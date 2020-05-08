@@ -325,6 +325,9 @@ ul {
 /* =============
     Typography
 ============= */
+h1, h2, h2 {
+  margin: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -366,7 +369,8 @@ footer {
   background-image: url("../img/section-1/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 50vh; }
+  height: 50vh;
+  position: relative; }
   @media (min-width: 768px) {
     #section-1 {
       height: 60vh; } }
@@ -376,6 +380,11 @@ footer {
   @media (min-width: 1200px) {
     #section-1 {
       height: 60vh; } }
+  #section-1 h1 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%; }
+
 /* =============
     Section-2
 ============= */
@@ -469,11 +478,12 @@ footer {
     grid-template-rows: repeat(3, 300px); }
     @media (min-width: 768px) {
       #section-4 ul {
-        grid-template-rows: repeat(2, 350px);
-        grid-template-areas: "g1 g1" "g2 g3";
+        grid-template-rows: repeat(3, 350px);
+        grid-template-areas: "g1 g1" "g1 g1" "g2 g3";
         grid-template-columns: 50% auto; } }
     @media (min-width: 992px) {
       #section-4 ul {
+        grid-template-rows: repeat(2, 350px);
         grid-template-areas: "g1 g2" "g1 g3";
         grid-template-columns: 60% auto; } }
     #section-4 ul li {
