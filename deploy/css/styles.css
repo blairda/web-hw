@@ -459,34 +459,36 @@ footer {
   grid-template-areas: "section-4"; }
   @media (min-width: 1200px) {
     #section-4 {
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-4 ."; } }
+      grid-template-areas: ". section-4 .";
+      grid-template-columns: auto 1200px auto; } }
   #section-4 ul {
-    grid-area: section-4;
     display: grid;
-    gap: 20px; }
+    gap: 20px;
+    grid-area: section-4;
+    grid-template-areas: "g1" "g2" "g3";
+    grid-template-rows: repeat(3, 300px); }
     @media (min-width: 768px) {
       #section-4 ul {
-        grid-template-columns: 50% auto;
-        grid-template-areas: "g1 g1" "g2 g3"; } }
+        grid-template-rows: repeat(2, 350px);
+        grid-template-areas: "g1 g1" "g2 g3";
+        grid-template-columns: 50% auto; } }
     @media (min-width: 992px) {
       #section-4 ul {
-        grid-template-columns: 60% auto;
-        grid-template-areas: "g1 g2" "g1 g3"; } }
-    #section-4 ul li img {
-      width: 100%; }
-    @media (min-width: 768px) {
-      #section-4 ul #g1 {
-        grid-area: g1; } }
-    @media (min-width: 992px) {
-      #section-4 ul #g1 {
-        grid-area: g1; } }
-    @media (min-width: 992px) {
-      #section-4 ul #g2 {
-        grid-area: g2; } }
-    @media (min-width: 992px) {
-      #section-4 ul #g3 {
-        grid-area: g3; } }
+        grid-template-areas: "g1 g2" "g1 g3";
+        grid-template-columns: 60% auto; } }
+    #section-4 ul li {
+      background-position: center;
+      background-size: cover; }
+    #section-4 ul #g1 {
+      background-image: url("../img/section-4/gallery1.png");
+      grid-area: g1; }
+    #section-4 ul #g2 {
+      background-image: url("../img/section-4/gallery-2.jpg");
+      grid-area: g2; }
+    #section-4 ul #g3 {
+      background-image: url("../img/section-4/gallery-3.jpg");
+      grid-area: g3; }
+
 /* =============
     Section-5
 ============= */

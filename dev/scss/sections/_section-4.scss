@@ -1,63 +1,59 @@
 /* =============
     Section-4
 ============= */
-
-#section-4{
+#section-4 {
     display: grid;
     grid-template-areas: "section-4";
 
-    @include xl{
-        grid-template-columns: auto 1200px auto;
+    @include xl {
         grid-template-areas: ". section-4 .";
+        grid-template-columns: auto 1200px auto;
     }
 
+    ul {
+        display: grid;
+        gap: 20px;
+        grid-area: section-4;
+        grid-template-areas: 
+        "g1"
+        "g2"
+        "g3";
+        grid-template-rows: repeat(3, 300px);
 
-    ul{
-
-        @include md{
-            grid-template-columns: 50% auto;
+        @include md {
+            grid-template-rows: repeat(2, 350px);
             grid-template-areas:
             "g1 g1"
             "g2 g3";
+            grid-template-columns: 50% auto;
         }
 
-        @include lg{
-            grid-template-columns: 60% auto;
+        @include lg {
             grid-template-areas:
             "g1 g2"
             "g1 g3";
+            grid-template-columns: 60% auto;
         }
 
-        grid-area: section-4;
-        display: grid;
-        gap: 20px;
-
-        li{
-            img{
-                width: 100%;
-            }
+        li {
+            background-position: center;
+            background-size: cover;
         }
 
-        #g1{
-            @include md{
-                grid-area: g1;
-            }
-
-            @include lg{
-                grid-area: g1;
-            }
+        #g1 {
+            background-image: url("../img/section-4/gallery1.png");
+            grid-area: g1;
         }
 
-        #g2{
-            @include lg{
-                grid-area: g2;
-            }
+        #g2 {
+            background-image: url("../img/section-4/gallery-2.jpg");
+            grid-area: g2;
         }
 
-        #g3{
-            @include lg{
-                grid-area: g3;
-            }
+        #g3 {
+            background-image: url("../img/section-4/gallery-3.jpg");
+            grid-area: g3;
         }
-    }
-}
+           
+     }
+ }
