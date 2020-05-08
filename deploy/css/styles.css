@@ -362,19 +362,22 @@ footer {
 /* =============
     Section-1
 ============= */
-@media (min-width: 1200px) {
-  #section-1 {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-1 ."; } }
-
-@media (min-width: 1200px) {
-  #section-1 #section-1-content {
-    grid-area: section-1; } }
-
-#section-1 #section-1-content img {
-  width: 100%; }
-
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid red;
+  height: 50vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 60vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 70vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 60vh; } }
 /* =============
     Section-2
 ============= */
