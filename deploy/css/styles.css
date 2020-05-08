@@ -364,9 +364,8 @@ footer {
 ============= */
 #section-1 {
   background-image: url("../img/section-1/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 50vh; }
   @media (min-width: 768px) {
     #section-1 {
@@ -390,7 +389,7 @@ footer {
   #section-2 #section-2-inner {
     display: grid;
     grid-template-areas: "cookies cookie-text";
-    grid-template-columns: 45% auto; } }
+    grid-template-columns: 40% auto; } }
 
 @media (min-width: 992px) {
   #section-2 #section-2-inner {
@@ -402,11 +401,15 @@ footer {
 
 #section-2 #section-2-inner aside {
   background-image: url("../img/section-2/believe-left.jpg");
-  background-size: cover;
   background-position: center;
-  border: 1px solid red;
+  background-size: cover;
   height: 60vh; }
-
+  @media (min-width: 768px) {
+    #section-2 #section-2-inner aside {
+      height: 45vh; } }
+  @media (min-width: 992px) {
+    #section-2 #section-2-inner aside {
+      height: 70vh; } }
 #section-2 #section-2-inner #section-2-container {
   display: grid;
   grid-template-areas: ". section-2 .";
@@ -423,8 +426,8 @@ footer {
 @media (min-width: 1200px) {
   #section-3 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-3 ."; } }
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 1200px) {
   #section-3 #section-3-content {
@@ -432,14 +435,16 @@ footer {
 
 #section-3 #section-3-content aside {
   background-image: url("../img/section-3/hero2.png");
-  height: 50vh;
   background-position: center;
-  background-size: cover; }
-
+  background-size: cover;
+  height: 50vh; }
+  @media (min-width: 992px) {
+    #section-3 #section-3-content aside {
+      height: 60vh; } }
 #section-3 #section-3-content #section-3-text {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-3 ."; }
+  grid-template-areas: ". section-3 .";
+  grid-template-columns: 10px auto 10px; }
   @media (min-width: 768px) {
     #section-3 #section-3-content #section-3-text {
       grid-template-columns: auto 50% auto; } }

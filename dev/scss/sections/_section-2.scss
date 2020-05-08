@@ -12,7 +12,7 @@
         @include md {
             display: grid;
             grid-template-areas: "cookies cookie-text";
-            grid-template-columns: 45% auto;
+            grid-template-columns: 40% auto;
         }
 
         @include lg {
@@ -25,14 +25,17 @@
 
         aside {
             background-image: url("../img/section-2/believe-left.jpg");
-            background-size: cover;
             background-position: center;
-            border: 1px solid red;
+            background-size: cover;
             height: 60vh;
 
-            // @include md {
-            //     grid-area: cookies;
-            // }
+            @include md {
+                height: 45vh;
+            }
+
+            @include lg {
+                height: 70vh;
+            }
         }
 
         #section-2-container {
