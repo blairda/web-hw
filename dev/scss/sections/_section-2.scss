@@ -1,52 +1,52 @@
 /* =============
     Section-2
 ============= */
-
-#section-2{
-    @include xl{
+#section-2 {
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2 .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    #section-2-inner{
-        @include md{
+    #section-2-inner {
+        @include md {
             display: grid;
-            grid-template-columns: 40% auto;
             grid-template-areas: "cookies cookie-text";
+            grid-template-columns: 45% auto;
         }
-        @include lg{
+
+        @include lg {
             grid-template-columns: 50% auto;
         }
-        
-        @include xl{
+
+        @include xl {
             grid-area: section-2;
         }
 
-        aside{
-            @include md{
-                grid-area: cookies;
-            }
-            img{
-                width: 100%;
-            }
+        aside {
+            background-image: url("../img/section-2/believe-left.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 1px solid red;
+            height: 60vh;
+
+            // @include md {
+            //     grid-area: cookies;
+            // }
         }
-    
-        #section-2-container{
+
+        #section-2-container {
             display: grid;
-            grid-template-columns: 10px auto 10px;
             grid-template-areas: ". section-2 .";
-            @include md{
+            grid-template-columns: 10px auto 10px;
+
+            @include md {
                 grid-area: cookie-text;
             }
-    
-            #section-2-content{
+
+            #section-2-content {
                 grid-area: section-2;
             }
-    
         }
     }
-
-    
-
 }

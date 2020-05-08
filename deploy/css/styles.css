@@ -367,7 +367,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid red;
   height: 50vh; }
   @media (min-width: 768px) {
     #section-1 {
@@ -384,14 +383,14 @@ footer {
 @media (min-width: 1200px) {
   #section-2 {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2 ."; } }
+    grid-template-areas: ". section-2 .";
+    grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 768px) {
   #section-2 #section-2-inner {
     display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-areas: "cookies cookie-text"; } }
+    grid-template-areas: "cookies cookie-text";
+    grid-template-columns: 45% auto; } }
 
 @media (min-width: 992px) {
   #section-2 #section-2-inner {
@@ -401,17 +400,17 @@ footer {
   #section-2 #section-2-inner {
     grid-area: section-2; } }
 
-@media (min-width: 768px) {
-  #section-2 #section-2-inner aside {
-    grid-area: cookies; } }
-
-#section-2 #section-2-inner aside img {
-  width: 100%; }
+#section-2 #section-2-inner aside {
+  background-image: url("../img/section-2/believe-left.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid red;
+  height: 60vh; }
 
 #section-2 #section-2-inner #section-2-container {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-2 ."; }
+  grid-template-areas: ". section-2 .";
+  grid-template-columns: 10px auto 10px; }
   @media (min-width: 768px) {
     #section-2 #section-2-inner #section-2-container {
       grid-area: cookie-text; } }
@@ -431,8 +430,11 @@ footer {
   #section-3 #section-3-content {
     grid-area: section-3; } }
 
-#section-3 #section-3-content aside img {
-  width: 100%; }
+#section-3 #section-3-content aside {
+  background-image: url("../img/section-3/hero2.png");
+  height: 50vh;
+  background-position: center;
+  background-size: cover; }
 
 #section-3 #section-3-content #section-3-text {
   display: grid;

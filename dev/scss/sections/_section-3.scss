@@ -15,9 +15,10 @@
         }
 
         aside{
-            img{
-                width: 100%;
-            }
+            background-image: url("../img/section-3/hero2.png");
+            height: 50vh;
+            background-position: center;
+            background-size: cover;
         }
 
         #section-3-text{
