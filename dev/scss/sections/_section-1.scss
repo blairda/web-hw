@@ -20,10 +20,23 @@
         height: 60vh;
     }
 
-    h1{
-        position: absolute;
+    h1 {
         bottom: 5%;
         left: 5%;
+        position: absolute;
     }
 
+    >div {
+        h1 {
+            font-size: rem-calc(44);
+
+            @include md {
+                font-size: rem-calc(56);
+            }
+
+            @include lg {
+                font-size: rem-calc(78);
+            }
+        }
+    }
 }

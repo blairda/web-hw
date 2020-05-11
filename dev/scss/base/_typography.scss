@@ -1,7 +1,20 @@
 /* =============
     Typography
 ============= */
-h1, h2, h2, h3, h4, h5, h6, p{
-    margin: 0;
-    padding: 0;
+h1, h2, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color: $white;
+}
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+P {
+	font-size: rem-calc(18);
+	font-weight: bolder;
+}
+h2 {
+	font-weight: bold;
 }

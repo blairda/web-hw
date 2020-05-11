@@ -14,27 +14,24 @@
         display: grid;
         gap: 20px;
         grid-area: section-4;
-        grid-template-areas: 
-        "g1"
-        "g2"
-        "g3";
+        grid-template-areas: "g1"
+            "g2"
+            "g3";
         grid-template-rows: repeat(3, 300px);
 
         @include md {
-            grid-template-rows: repeat(3, 350px);
-            grid-template-areas:
-            "g1 g1"
-            "g1 g1"
-            "g2 g3";
+            grid-template-areas: "g1 g1"
+                "g1 g1"
+                "g2 g3";
             grid-template-columns: 50% auto;
+            grid-template-rows: repeat(3, 350px);
         }
 
         @include lg {
-            grid-template-rows: repeat(2, 350px);
-            grid-template-areas:
-            "g1 g2"
-            "g1 g3";
+            grid-template-areas: "g1 g2"
+                "g1 g3";
             grid-template-columns: 60% auto;
+            grid-template-rows: repeat(2, 350px);
         }
 
         li {
@@ -56,6 +53,5 @@
             background-image: url("../img/section-4/gallery-3.jpg");
             grid-area: g3;
         }
-           
-     }
- }
+    }
+}

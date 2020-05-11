@@ -1,11 +1,15 @@
 /* =============
     Footer
 ============= */
-footer{
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". footer .";
-    #footer-content{
-        grid-area: footer;
+footer {
+
+    // display: grid;
+    // grid-template-columns: 10px auto 10px;
+    // grid-template-areas: ". footer .";
+    #footer-content {
+        // grid-area: footer;
+        text-align: center;
+        color: $white;
+        background-color: $brown;
     }
 }
