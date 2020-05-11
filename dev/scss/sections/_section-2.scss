@@ -2,6 +2,7 @@
     Section-2
 ============= */
 #section-2 {
+
     @include xl {
         display: grid;
         grid-template-areas: ". section-2 .";
