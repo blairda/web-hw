@@ -55,15 +55,31 @@
         #section-2-container {
             display: grid;
             grid-template-areas: ". section-2 .";
-            grid-template-columns: 10px auto 10px;
+            grid-template-columns: 10% auto 10%;
+            // padding: 10px;
 
             @include md {
                 grid-area: cookie-text;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
             }
 
             #section-2-content {
                 grid-area: section-2;
-                margin: 300px 0 200px;
+                // margin: 300px 0 200px;
+
+                @include md {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                >div{
+                        hr{
+                            background-color: $brown;
+                        }
+                }
             }
         }
     }

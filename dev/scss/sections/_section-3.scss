@@ -53,6 +53,10 @@
 
             #section-3-text-content {
                 grid-area: section-3;
+
+                hr{
+                    background-color: red;
+                }
             }
         }
     }

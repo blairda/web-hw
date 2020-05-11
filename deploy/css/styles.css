@@ -330,6 +330,10 @@ ul {
   @media (min-width: 992px) {
     .content-spacing {
       margin-top: 50px; } }
+hr {
+  border: none;
+  height: 4px; }
+
 /* =============
     Typography
 ============= */
@@ -457,13 +461,19 @@ footer #footer-content {
 #section-2 #section-2-inner #section-2-container {
   display: grid;
   grid-template-areas: ". section-2 .";
-  grid-template-columns: 10px auto 10px; }
+  grid-template-columns: 10% auto 10%; }
   @media (min-width: 768px) {
     #section-2 #section-2-inner #section-2-container {
       grid-area: cookie-text; } }
   #section-2 #section-2-inner #section-2-container #section-2-content {
-    grid-area: section-2;
-    margin: 300px 0 200px; }
+    grid-area: section-2; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-inner #section-2-container #section-2-content {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    #section-2 #section-2-inner #section-2-container #section-2-content > div hr {
+      background-color: #552901; }
 
 /* =============
     Section-3
@@ -504,6 +514,8 @@ footer #footer-content {
         grid-template-columns: auto 50% auto; } }
     #section-3 #section-3-content #section-3-text #section-3-text-content {
       grid-area: section-3; }
+      #section-3 #section-3-content #section-3-text #section-3-text-content hr {
+        background-color: red; }
 
 /* =============
     Section-4

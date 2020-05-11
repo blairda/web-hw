@@ -32,34 +32,34 @@
 		},
 	"/deploy/img/section-1/hero.jpg": {
 		"ft": 16384,
-		"iS": 210480,
+		"iS": 2718353,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/section-1/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/section-2/believe-left.jpg": {
 		"ft": 16384,
-		"iS": 70929,
+		"iS": 255384,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/section-2/believe-left.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/section-3/hero2.png": {
 		"ft": 32768,
-		"iS": 1565592,
+		"iS": 2206914,
 		"oA": 0,
 		"oAP": "/deploy/img/section-3/hero2.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -147,8 +147,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/index.html",
-		"oF": 2
+		"oAP": "/dev/index.html",
+		"oF": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -364,8 +364,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/deploy/css/styles.css",
-		"oF": 2,
+		"oAP": "/dev/scss/styles.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
