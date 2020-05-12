@@ -16,13 +16,11 @@ ul {
         margin-top: 50px;
     }
 
-    @include lg {
-        margin-top: 50px;
-    }
 }
 
 
 hr {
     border: none;
     height: 4px;
+    background-color: $brown;
 }

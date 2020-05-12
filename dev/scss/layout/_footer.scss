@@ -3,13 +3,17 @@
 ============= */
 footer {
 
-    // display: grid;
-    // grid-template-columns: 10px auto 10px;
-    // grid-template-areas: ". footer .";
     #footer-content {
-        // grid-area: footer;
-        text-align: center;
+        text-align: right;
         color: $white;
         background-color: $brown;
+        height: 80px;
+
+        aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
+        
 }

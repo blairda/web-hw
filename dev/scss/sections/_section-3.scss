@@ -25,6 +25,7 @@
     }
 
     #section-3-content {
+
         @include xl {
             grid-area: section-3;
         }
@@ -42,6 +43,7 @@
 
         #section-3-text {
             // margin-top: 50px;
+            padding-top: 50px;
             display: grid;
             grid-template-areas: ". section-3 .";
             grid-template-columns: 10px auto 10px;
@@ -54,9 +56,9 @@
             #section-3-text-content {
                 grid-area: section-3;
 
-                hr{
-                    background-color: red;
-                }
+                    hr{
+                        background-color: black;
+                    }
             }
         }
     }

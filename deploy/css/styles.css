@@ -327,12 +327,10 @@ ul {
   @media (min-width: 768px) {
     .content-spacing {
       margin-top: 50px; } }
-  @media (min-width: 992px) {
-    .content-spacing {
-      margin-top: 50px; } }
 hr {
   border: none;
-  height: 4px; }
+  height: 4px;
+  background-color: #552901; }
 
 /* =============
     Typography
@@ -382,9 +380,14 @@ textarea {
     Footer
 ============= */
 footer #footer-content {
-  text-align: center;
+  text-align: right;
   color: #fff;
-  background-color: #552901; }
+  background-color: #552901;
+  height: 80px; }
+  footer #footer-content aside {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /* =============
     Section-1
@@ -505,6 +508,7 @@ footer #footer-content {
       #section-3 #section-3-content aside {
         height: 60vh; } }
   #section-3 #section-3-content #section-3-text {
+    padding-top: 50px;
     display: grid;
     grid-template-areas: ". section-3 .";
     grid-template-columns: 10px auto 10px;
@@ -515,7 +519,7 @@ footer #footer-content {
     #section-3 #section-3-content #section-3-text #section-3-text-content {
       grid-area: section-3; }
       #section-3 #section-3-content #section-3-text #section-3-text-content hr {
-        background-color: red; }
+        background-color: black; }
 
 /* =============
     Section-4
@@ -581,9 +585,25 @@ footer #footer-content {
     display: grid;
     grid-template-columns: 40% auto; } }
 
+#section-5 #section-5-inner aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px; }
+  @media (min-width: 768px) {
+    #section-5 #section-5-inner aside {
+      padding-bottom: 45px; } }
+  @media (min-width: 992px) {
+    #section-5 #section-5-inner aside {
+      padding-bottom: 50px; } }
 #section-5 #section-5-inner #section-5-text {
   display: grid;
   grid-template-areas: ". section-5-text .";
   grid-template-columns: 10px auto 10px; }
   #section-5 #section-5-inner #section-5-text #section-5-text-content {
     grid-area: section-5-text; }
+    @media (min-width: 992px) {
+      #section-5 #section-5-inner #section-5-text #section-5-text-content {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }

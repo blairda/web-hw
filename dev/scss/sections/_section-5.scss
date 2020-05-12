@@ -26,15 +26,18 @@
             grid-template-columns: 40% auto;
         }
 
-        @include xl {
-            // border: 1px solid red;
-        }
+        aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 35px;
 
-        aside {
+            @include md{
+                padding-bottom: 45px;
+            }
 
-            // text-align: center;
-            img {
-                // width: 199px;
+            @include lg{
+                padding-bottom: 50px;
             }
         }
 
@@ -45,6 +48,12 @@
 
             #section-5-text-content {
                 grid-area: section-5-text;
+
+                @include lg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
