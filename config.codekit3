@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/header.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/header.html",
+		"oF": 0
+		},
 	"/deploy/img/footer/Group.png": {
 		"ft": 32768,
 		"iS": 1375,
@@ -141,6 +149,14 @@
 		"oA": 1,
 		"oAP": "/dev/footer.html",
 		"oF": 0
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/header.html",
+		"oF": 2
 		},
 	"/dev/index.kit": {
 		"cB": 0,

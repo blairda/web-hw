@@ -1,3 +1,64 @@
 /* =============
     Header
 ============= */
+header{
+
+    h1{
+        color: $brown;
+    }
+
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "logo menu"
+        "nav nav";
+        grid-template-columns: 80% auto;
+
+        @include lg{
+            grid-template-areas: "logo nav";
+            grid-template-columns: 50% auto;
+        }
+
+        #logo-container {
+            grid-area: logo;
+            padding: 20px;
+        }
+
+        #menu-container {
+            align-items: center;
+            display: flex;
+            grid-area: menu;
+            justify-content: flex-end;
+            padding: 20px;
+
+            // @include lg{
+            //     display: none !important;
+            // }
+
+            i{
+                cursor: pointer;
+                font-size: rem-calc(20);
+                color: $brown;
+            }
+        }
+
+        #nav-container {
+            background-color: $brown;
+            display: none;
+            grid-area: nav;
+            padding: 20px;
+
+            @include lg{
+                background-color: $white;
+                display: block !important;
+            }
+        }
+    }
+}
