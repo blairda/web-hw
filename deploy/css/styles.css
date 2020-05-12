@@ -327,6 +327,12 @@ ul {
   @media (min-width: 768px) {
     .content-spacing {
       margin-top: 50px; } }
+  @media (min-width: 992px) {
+    .content-spacing {
+      margin-top: 60px; } }
+  @media (min-width: 1200px) {
+    .content-spacing {
+      margin-top: 70px; } }
 hr {
   border: none;
   height: 4px;

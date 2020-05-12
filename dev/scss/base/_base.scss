@@ -16,6 +16,14 @@ ul {
         margin-top: 50px;
     }
 
+    @include lg {
+        margin-top: 60px;
+    }
+
+    @include xl {
+        margin-top: 70px;
+    }
+
 }
 
 
