@@ -7,6 +7,7 @@
     background-size: cover;
     height: 50vh;
     position: relative;
+    margin-top: 76px;
 
     @include md {
         height: 60vh;
@@ -14,6 +15,7 @@
 
     @include lg {
         height: 70vh;
+        margin-top: 90px;
     }
 
     @include xl {
