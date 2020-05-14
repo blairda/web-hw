@@ -8,11 +8,13 @@ footer {
         color: $white;
         background-color: $brown;
         height: 80px;
+        padding-right: 10px;
 
         aside{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 10px;
         }
     }
         

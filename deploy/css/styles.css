@@ -453,11 +453,13 @@ footer #footer-content {
   text-align: right;
   color: #fff;
   background-color: #552901;
-  height: 80px; }
+  height: 80px;
+  padding-right: 10px; }
   footer #footer-content aside {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 10px; }
 
 /* =============
     Section-1
